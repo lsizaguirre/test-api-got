@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Thrones</title>
+
+    <!-- Se referencia/carga la librería de jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Se incluye la libreria UI de jQuery para abrir ventanas modales -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!-- Se referencia el archivo javascript que contiene la lógica de la página -->
+    <script src="js/index.js"></script>
+
+    <!-- Se referencia el archivo javascript que garantiza el comportamiento responsivo de la ventana modal -->
+    <script src="js/fluid.js"></script>
+
+    <!-- Se referencia la hoja de estilo del proyecto -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div><img class="logo" src="img/logo.jpg"></div>
+
+    <!-- Titulo -->
+    <div class="titulo">Casas de Game of Thrones</div>
+
+    <!-- Contenedor en el que se desplegarán las casas que retorne el API -->
+    <div id="contenedor-casas"></div>
+
+    <!-- Botón paginador/ver más -->
+    <button onclick="VerMasCasas()" id="viewMore" title="Ver más">Ver más</button>
+
+    <!-- Botón Ir Arriba, Ir al Inicio, Ir al principio -->
+    <button onclick="IrArriba()" id="myBtn" title="Ir arriba">Ir arriba</button>
+
+    <!-- Estructura que muestra el detalle del Lord Commander / Ventana modal -->
+    <div id="dialog" title="Lord Commander">
+        <p><b><span>Nombre: </span><span id="commanderName"></span></b></p>
+        <p><span>Gender: </span><span id="commanderGender"></span></p>
+        <p><span>Culture: </span><span id="commanderCulture"></span></p>
+        <p><span>Born: </span><span id="commanderBorn"></span></p>
+        <p><span>Died: </span><span id="commanderDied"></span></p>
+        <p><span>Titles: </span><span id="commanderTitles"></span></p>
+        <p><span>Aliases: </span><span id="commanderAliases"></span></p>
+        <p><span>Father: </span><span id="commanderFather"></span></p>
+        <p><span>Mother: </span><span id="commanderMother"></span></p>
+        <p><span>Spouse: </span><span id="commanderSpouse"></span></p>
+        <p><span>Allegiances: </span><span id="commanderAllegiances"></span></p>
+    </div>
+
+</body>
+
+</html>
